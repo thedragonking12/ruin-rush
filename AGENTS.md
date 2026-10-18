@@ -6,10 +6,11 @@ Ground rules for every AI that works in this repo. Read this file before startin
 
 | Role | Who | What they do |
 | --- | --- | --- |
-| Manager | _(fill in: the external manager agent)_ | Creates issues, assigns them by role, tracks progress, checks that merged work matches the plan. |
-| Coder | _(fill in: AI name)_ | Builds features and fixes bugs in a branch and opens a pull request. |
-| Researcher | _(fill in: AI name)_ | Investigates a question and saves the findings in `research/`. |
-| Reviewer | _(fill in: AI name)_ | Reviews pull requests and writes the result in `reviews/` and as a PR comment. |
+| Manager | External manager agent | Creates issues, assigns them by role, tracks progress, checks that merged work matches the plan. |
+| Coder | Claude | Builds features and fixes bugs in a branch and opens a pull request. |
+| Researcher | Gemini | Investigates a question and saves the findings in `research/`. |
+| Reviewer | ChatGPT | Reviews pull requests and writes the result in `reviews/` and as a PR comment. |
+| Helper | GitHub Copilot | Small fixes, pull request descriptions and cleanup, on issues the manager gives it. Can back up the coder. |
 | Owner | thedragonking12 | Makes the final call and does the merge. |
 
 Edit the "Who" column as the team changes. One AI can hold more than one role, but should not review its own code.
